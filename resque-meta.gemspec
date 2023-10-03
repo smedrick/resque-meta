@@ -47,11 +47,11 @@ desc
     current_version = Gem::Specification::CURRENT_SPECIFICATION_VERSION
     s.specification_version = 3
 
-    s.add_runtime_dependency('resque', ["~> 1.8"])
+    s.add_runtime_dependency('resque', ["< 3.0"])
     s.add_development_dependency('rake', ["~> 0.9.2"])
     s.add_development_dependency('json')
   else
-    s.add_dependency('resque', ["~> 1.8"])
+    s.add_dependency('resque', ["< 3.0"])
     s.add_dependency('rake', ["~> 0.9.2"])
   end
 end
